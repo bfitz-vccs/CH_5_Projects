@@ -1,12 +1,22 @@
 #include <iostream>
+#include <string>
 
 int main(){
-
-    for (int i=1; i < 11; i++)
-        for (int j = 0; j < i; j++){
+    int count = 0;
+    while (count < 10){
+        for (int i = 0; i < count; i++){
             std::cout << "*";
         }
         std::cout << std::endl;
+        count++;
+    }
+    while (count > 0){
+        for (int i = count; i > 0; i--){
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+        count--;
+    }
 
     return 0;
 }
