@@ -10,6 +10,7 @@ int main(){
     inputFile.open("LineUp.txt");
     std::string top_name = "";
     std::string bottom_name = "";
+    
 
     while(inputFile >> name){
         count += 1;
@@ -30,6 +31,7 @@ int main(){
     std::cout << "The number of students in the class is: " << count << std::endl;
     std::cout << "The student at the front of the line is: " << top_name << std::endl;
     std::cout << "The student at the back of the line is: " << bottom_name << std::endl;
+    
 
     return 0;
 }
